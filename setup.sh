@@ -11,7 +11,7 @@ adduser -s /bin/zsh -u 1000 -D -G $USERNAME $USERNAME
 
 # Install some additional packages
 apk update
-apk add --no-cache zsh=~5.8-r1 git
+apk add --no-cache zsh=~5.8-r1 git zsh-vcs
 
 apk add --no-cache --virtual .build-deps bash curl gcc musl-dev openssl go
 
